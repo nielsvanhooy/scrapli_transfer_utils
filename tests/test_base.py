@@ -61,7 +61,7 @@ async def test_file_transfer_all_opts(async_scp_iosxe_object):
                 cleanup=True,
             )
             assert file_trans.transferred is True
-            assert file_trans.exists is True
+            assert file_trans.exists is False
             assert file_trans.verified is True
 
 

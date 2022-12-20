@@ -213,13 +213,12 @@ class AsyncTransferFeature(ABC):
             logger.debug(f"Destination file '{dst}': {dst_file_data}")
             if dst_file_data.hash:
                 transfer_result.exists = True
+
                 if src_file_data.hash == dst_file_data.hash:
                     transfer_result.verified = True
-                    logger.debug(
-                        f"'{dst}' file already exists at destination and verified OK"
-                    )
-                    if not overwrite:
-                        return transfer_result
+                    # no need to transfer file
+                    logger.debug(f"'{dst}' file already exists at destination and verified OK")
+                    return transfer_result
 
             # if hash does not match and we want to overwrite
             if dst_file_data.hash and not overwrite:
