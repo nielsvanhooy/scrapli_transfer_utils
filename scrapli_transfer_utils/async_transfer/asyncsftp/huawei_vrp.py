@@ -108,27 +108,6 @@ class AsyncSFTPHuaweiVrp(AsyncTransferFeature):
         dst: str,
     ) -> bool:
 
-        # # noinspection PyProtectedMember
-        # scp_options = SCPConnectionParameterType(
-        #     username=self.conn.auth_username,
-        #     password=self.conn.auth_password,
-        #     port=self.conn.port,
-        #     host=self.conn.host,
-        #     options=self.conn.transport.session._options,  # noqa: W0212
-        # )
-
-        # result = False
-        # try:
-        # import logging
-        # logging.basicConfig(level='DEBUG')
-        # asyncssh.set_debug_level(2)
-        # async with connect(**scp_options) as ssh_conn:
-        #     if operation == "get":
-        #         async with ssh_conn.start_sftp_client(sftp_version=5) as sftp:
-        #             await sftp.get(
-        #                 remotepaths=src,
-        #                 localpath=dst,
-        #             )
         result = False
 
         try:

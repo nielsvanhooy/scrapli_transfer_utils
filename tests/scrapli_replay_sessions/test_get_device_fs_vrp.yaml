@@ -1,6 +1,6 @@
 10.1.1.131:22:AsyncsshTransport::0:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
@@ -32,8 +32,8 @@
         \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: null,
       expected_channel_input_redacted: false}
 10.1.1.131:22:AsyncsshTransport::1:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
