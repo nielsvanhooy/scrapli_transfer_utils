@@ -1,0 +1,85 @@
+10.1.1.142:22:AsyncsshTransport::0:
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+    host: 10.1.1.142, port: 22, transport: asyncssh}
+  interactions:
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n**************************************************************\n\
+        *                                                            *\n*   You have\
+        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
+        \ from The Hague, Netherlands.          *\n*                             \
+        \                               *\n*   Use of this system/network is restricted\
+        \ to employees    *\n*   of KPN, employment agency staff, work experience\
+        \         *\n*   trainees and persons with a contract of employment      \
+        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
+        \ to use the system.                            *\n*                     \
+        \                                       *\n*   The software and data in this\
+        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
+        \ or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl\
+        \ z and quit to logout.                           *\n*                   \
+        \                                         *\n*                           \
+        \                                 *\n**************************************************************\n\
+        \none-gv-2595bk-42#\none-gv-2595bk-42#", expected_channel_input: terminal
+        length 0, expected_channel_input_redacted: false}
+    - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+        512, expected_channel_input_redacted: false}
+    - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: null, expected_channel_input_redacted: false}
+10.1.1.142:22:AsyncsshTransport::1:
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+    host: 10.1.1.142, port: 22, transport: asyncssh}
+  interactions:
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n**************************************************************\n\
+        *                                                            *\n*   You have\
+        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
+        \ from The Hague, Netherlands.          *\n*                             \
+        \                               *\n*   Use of this system/network is restricted\
+        \ to employees    *\n*   of KPN, employment agency staff, work experience\
+        \         *\n*   trainees and persons with a contract of employment      \
+        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
+        \ to use the system.                            *\n*                     \
+        \                                       *\n*   The software and data in this\
+        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
+        \ or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl\
+        \ z and quit to logout.                           *\n*                   \
+        \                                         *\n*                           \
+        \                                 *\n**************************************************************\n\
+        \none-gv-2595bk-42#\none-gv-2595bk-42#", expected_channel_input: terminal
+        length 0, expected_channel_input_redacted: false}
+    - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+        512, expected_channel_input_redacted: false}
+    - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: dir | i Directory
+        of (.*), expected_channel_input_redacted: false}
+    - {channel_output: dir | i Directory of (.*), expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\nDirectory of flash:/\none-gv-2595bk-42#", expected_channel_input: verify
+        /md5 flash:/running_config, expected_channel_input_redacted: false}
+    - {channel_output: verify /md5 flash:/running_config, expected_channel_input: "\n",
+      expected_channel_input_redacted: false}
+    - {channel_output: "\n...MD5 of flash:/running_config Done!\nverify /md5 (flash:/running_config)\
+        \ = 2e3817293fc275dbee74bd71ce6eb056\n\n\none-gv-2595bk-42#", expected_channel_input: dir
+        flash:/running_config, expected_channel_input_redacted: false}
+    - {channel_output: dir flash:/running_config, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\nDirectory of flash:/running_config\n\n  154  -rw-      \
+        \  9186  Dec 19 2022 13:13:56 +00:00  running_config\n\n256503808 bytes total\
+        \ (61087744 bytes free)\none-gv-2595bk-42#", expected_channel_input: dir flash:/
+        | i free\)$, expected_channel_input_redacted: false}
+    - {channel_output: dir flash:/ | i free\)$, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n256503808 bytes total (61087744 bytes free)\none-gv-2595bk-42#",
+      expected_channel_input: sh run all | i ^ip scp server enable|^ip tcp window|^ip
+        ssh window, expected_channel_input_redacted: false}
+    - {channel_output: sh run all | i ^ip scp server enable|^ip tcp window|^ip ssh
+        window, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\nip tcp window-size 65536\nip ssh window-size 65536\nip scp\
+        \ server enable\none-gv-2595bk-42#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: exit, expected_channel_input_redacted: false}
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}

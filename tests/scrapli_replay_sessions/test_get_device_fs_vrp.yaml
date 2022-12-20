@@ -1,0 +1,109 @@
+10.1.1.131:22:AsyncsshTransport::0:
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+    host: 10.1.1.131, port: 22, transport: asyncssh}
+  interactions:
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n\n**************************************************************\n\
+        *                                                            *\n*   You have\
+        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
+        \ from The Hague, Netherlands.          *\n*                             \
+        \                               *\n*   Use of this system/network is restricted\
+        \ to employees    *\n*   of KPN, employment agency staff, work experience\
+        \         *\n*   trainees and persons with a contract of employment      \
+        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
+        \ to use the system.                            *\n*                     \
+        \                                       *\n*   The software and data in this\
+        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
+        \ or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl\
+        \ z and quit to logout.                           *\n*                   \
+        \                                         *\n*                           \
+        \                                 *\n**************************************************************\n\
+        \n  -----------------------------------------------------------------------------\
+        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
+        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
+        \   : 2022-12-20 11:53:19+01:00     \n  -----------------------------------------------------------------------------\n\
+        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
+      expected_channel_input_redacted: false}
+    - {channel_output: "\nInfo: The configuration takes effect on the current user\
+        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: null,
+      expected_channel_input_redacted: false}
+10.1.1.131:22:AsyncsshTransport::1:
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /home/donnyio/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: lagen008,
+    host: 10.1.1.131, port: 22, transport: asyncssh}
+  interactions:
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n\n**************************************************************\n\
+        *                                                            *\n*   You have\
+        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
+        \ from The Hague, Netherlands.          *\n*                             \
+        \                               *\n*   Use of this system/network is restricted\
+        \ to employees    *\n*   of KPN, employment agency staff, work experience\
+        \         *\n*   trainees and persons with a contract of employment      \
+        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
+        \ to use the system.                            *\n*                     \
+        \                                       *\n*   The software and data in this\
+        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
+        \ or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl\
+        \ z and quit to logout.                           *\n*                   \
+        \                                         *\n*                           \
+        \                                 *\n**************************************************************\n\
+        \n  -----------------------------------------------------------------------------\
+        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
+        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
+        \   : 2022-12-20 11:53:27+01:00     \n  -----------------------------------------------------------------------------\n\
+        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
+      expected_channel_input_redacted: false}
+    - {channel_output: "\nInfo: The configuration takes effect on the current user\
+        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: dir
+        /all, expected_channel_input_redacted: false}
+    - {channel_output: dir /all, expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\nDirectory of flash:/\n\n  Idx  Attr     Size(Byte)  Date\
+        \        Time(LMT)  FileName \n    0  drw-              -  Jun 07 2021 15:26:38\
+        \   shelldir\n    1  -rw-        207,376  Nov 17 2022 11:32:53   webdata.db\n\
+        \    2  drw-              -  Dec 13 2022 10:10:21   AUTO_BACKUP\n    3  drw-\
+        \              -  May 20 2020 18:22:56   dhcp\n    4  -rw-         13,092\
+        \  Dec 16 2022 13:33:05   lala\n    5  drw-              -  May 20 2020 18:22:11\
+        \   slog\n    6  -rw-         11,171  Jun 07 2021 15:27:50   default_ca.cer\n\
+        \    7  -rw-            200  May 20 2020 18:21:59   hostkey_ECC\n    8  drw-\
+        \              -  May 20 2020 18:22:25   logopath\n    9  -rw-         13,092\
+        \  Dec 16 2022 10:44:10   21500104832SL5600370-1668688866694.cfg\n   10  -rw-\
+        \         15,123  Dec 16 2022 10:18:29   lala.txt\n   11  -rw-         15,123\
+        \  Dec 13 2022 10:10:21   21500104832SL5600370-1670576590861.cfg\n   12  -rw-\
+        \          3,455  Dec 09 2022 10:03:06   ONEM1131-preconfig.cfg\n   13  drw-\
+        \              -  Jun 07 2021 15:26:37   shlogfile\n   14  -ro-          2,494\
+        \  Jun 07 2021 15:27:06   houp.huawei.com_local.cer\n   15  -rw-         14,291\
+        \  Oct 20 2022 19:13:19   one-gv-2595bk-03-confg\n   16  -rw-         13,888\
+        \  Oct 20 2022 16:21:42   21500104832SL5600370-1665687926033.cfg\n   17  -rw-\
+        \          1,265  Jun 07 2021 15:27:50   default_local.cer\n   18  drw-  \
+        \            -  Nov 17 2022 11:32:59   logfile\n   19  -rw-            120\
+        \  Nov 04 2021 09:21:45   vrpcfg.zip\n   20  drw-              -  May 03 2022\
+        \ 12:43:49   $_user\n   21  drw-              -  Nov 19 2021 12:18:26   backup_startup\n\
+        \   22  -rw-              0  May 20 2020 18:21:55   brdxpon_snmp_cfg.efs\n\
+        \   23  drw-              -  Jun 07 2021 15:26:46   crash\n   24  drw-   \
+        \           -  May 20 2020 18:22:57   sqlitedb\n   25  -ro-          2,082\
+        \  Jun 07 2021 15:27:06   Actalis_CA.cer\n   26  -rw-          1,253  Jun\
+        \ 07 2021 15:27:20   local.cer\n   27  -rw-            702  Dec 13 2022 10:10:22\
+        \   private-data.txt\n   28  drw-              -  Oct 20 2022 16:21:38   localuser\n\
+        \   29  -rw-          1,318  Jun 07 2021 15:27:20   ca.cer\n   30  drw-  \
+        \            -  Dec 09 2022 10:05:18   default-sdb\n   31  drw-          \
+        \    -  Dec 09 2022 10:05:59   update\n   32  -rw-     13,570,688  Nov 17\
+        \ 2022 12:09:35   AR650A-V300R019CP0026.pat\n   33  -rw-          6,474  Nov\
+        \ 17 2022 10:37:12   startcap\n   34  -rw-            498  Nov 17 2022 12:09:40\
+        \   kpn_install_syslog.py\n   35  -rw-    159,265,792  May 20 2020 18:18:54\
+        \   AR650A-V300R019C10SPC200.cc\n   36  -rw-         12,519  Nov 18 2022 06:55:28\
+        \   21500104832SL5600370-1668750669617.cfg\n   37  -rw-    167,541,888  Nov\
+        \ 17 2022 10:47:46   AR650A_V300R019C11SPC200.cc\n   38  -rw-          2,329\
+        \  Dec 09 2022 10:04:22   alloc_hugemem_record\n   39  -rw-            200\
+        \  Jun 07 2021 15:27:50   ca_config.ini\n   40  -rw-            498  Nov 29\
+        \ 2021 10:18:56   [kpn_install_syslog.py]\n\n631,960 KB total available (291,896\
+        \ KB free)\n<one-gv-2595bk-03>", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>", expected_channel_input: exit, expected_channel_input_redacted: false}
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
