@@ -4,32 +4,11 @@
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n\n**************************************************************\n\
-        *                                                            *\n*   You have\
-        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
-        \ from The Hague, Netherlands.          *\n*                             \
-        \                               *\n*   Use of this system/network is restricted\
-        \ to employees    *\n*   of KPN, employment agency staff, work experience\
-        \         *\n*   trainees and persons with a contract of employment      \
-        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
-        \ to use the system.                            *\n*                     \
-        \                                       *\n*   The software and data in this\
-        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
-        \ or deleted     *\n*   only by authorized persons for the purpose of their\
-        \      *\n*   work for KPN.                                            *\n\
-        *                                                            *\n*   Use Ctrl\
-        \ z and quit to logout.                           *\n*                   \
-        \                                         *\n*                           \
-        \                                 *\n**************************************************************\n\
-        \n  -----------------------------------------------------------------------------\
-        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
-        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
-        \   : 2022-12-20 12:33:29+01:00     \n  -----------------------------------------------------------------------------\n\
-        <one-gv-2595bk-03>\n<one-gv-2595bk-03>", expected_channel_input: screen-length
+    - {channel_output: "<test_device>\n<test_device>", expected_channel_input: screen-length
         0 temporary, expected_channel_input_redacted: false}
     - {channel_output: screen-length 0 temporary, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: null,
+        \ terminal interface only.\n<test_device>", expected_channel_input: null,
       expected_channel_input_redacted: false}
 10.1.1.131:22:AsyncsshTransport::1:
   connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
@@ -37,37 +16,16 @@
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n\n**************************************************************\n\
-        *                                                            *\n*   You have\
-        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
-        \ from The Hague, Netherlands.          *\n*                             \
-        \                               *\n*   Use of this system/network is restricted\
-        \ to employees    *\n*   of KPN, employment agency staff, work experience\
-        \         *\n*   trainees and persons with a contract of employment      \
-        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
-        \ to use the system.                            *\n*                     \
-        \                                       *\n*   The software and data in this\
-        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
-        \ or deleted     *\n*   only by authorized persons for the purpose of their\
-        \      *\n*   work for KPN.                                            *\n\
-        *                                                            *\n*   Use Ctrl\
-        \ z and quit to logout.                           *\n*                   \
-        \                                         *\n*                           \
-        \                                 *\n**************************************************************\n\
-        \n  -----------------------------------------------------------------------------\
-        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
-        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
-        \   : 2022-12-20 12:39:56+01:00     \n  -----------------------------------------------------------------------------\n\
-        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
-    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
+    - {channel_output: "<test_device>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<test_device>screen-length 0 temporary", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
     - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: display
+        \ terminal interface only.\n<test_device>", expected_channel_input: display
         system file-md5 flash:/21500104832SL5600370-1668688866694.cfg, expected_channel_input_redacted: false}
     - {channel_output: display system file-md5 flash:/21500104832SL5600370-1668688866
         694.cfg, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\n 100%     File Name:\nflash:/21500104832SL5600370-1668688866694.cfg\n\
-        MD5:\nf317ac28f760df9c5f6f714ce501ac81\n<one-gv-2595bk-03>", expected_channel_input: dir
+        MD5:\nf317ac28f760df9c5f6f714ce501ac81\n<test_device>", expected_channel_input: dir
         /all, expected_channel_input_redacted: false}
     - {channel_output: dir /all, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nDirectory of flash:/\n\n  Idx  Attr     Size(Byte)  Date\
@@ -85,7 +43,7 @@
         \          3,455  Dec 09 2022 10:03:06   ONEM1131-preconfig.cfg\n   13  drw-\
         \              -  Jun 07 2021 15:26:37   shlogfile\n   14  -ro-          2,494\
         \  Jun 07 2021 15:27:06   houp.huawei.com_local.cer\n   15  -rw-         14,291\
-        \  Oct 20 2022 19:13:19   one-gv-2595bk-03-confg\n   16  -rw-         13,888\
+        \  Oct 20 2022 19:13:19   test_device-confg\n   16  -rw-         13,888\
         \  Oct 20 2022 16:21:42   21500104832SL5600370-1665687926033.cfg\n   17  -rw-\
         \          1,265  Jun 07 2021 15:27:50   default_local.cer\n   18  drw-  \
         \            -  Nov 17 2022 11:32:59   logfile\n   19  -rw-            120\
@@ -109,6 +67,6 @@
         \  Dec 09 2022 10:04:22   alloc_hugemem_record\n   39  -rw-            200\
         \  Jun 07 2021 15:27:50   ca_config.ini\n   40  -rw-            498  Nov 29\
         \ 2021 10:18:56   [kpn_install_syslog.py]\n\n631,960 KB total available (291,896\
-        \ KB free)\n<one-gv-2595bk-03>", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n<one-gv-2595bk-03>", expected_channel_input: exit, expected_channel_input_redacted: false}
+        \ KB free)\n<test_device>", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n<test_device>", expected_channel_input: exit, expected_channel_input_redacted: false}
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}

@@ -4,39 +4,39 @@
     host: 10.1.1.142, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "one-gv-2595bk-42#", expected_channel_input: terminal
+    - {channel_output: "test_device#", expected_channel_input: terminal
         length 0, expected_channel_input_redacted: false}
     - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+    - {channel_output: "\ntest_device#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: null, expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: null, expected_channel_input_redacted: false}
 10.1.1.142:22:AsyncsshTransport::1:
   connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
     auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
     host: 10.1.1.142, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "one-gv-2595bk-42#", expected_channel_input: terminal
+    - {channel_output: "test_device#", expected_channel_input: terminal
         length 0, expected_channel_input_redacted: false}
     - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+    - {channel_output: "\ntest_device#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: configure terminal,
+    - {channel_output: "\ntest_device#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: configure terminal,
       expected_channel_input_redacted: false}
     - {channel_output: configure terminal, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nEnter configuration commands, one per line.  End with CNTL/Z.\n\
-        one-gv-2595bk-42(config)#", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42(config)#", expected_channel_input: ip scp
+        test_device(config)#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device(config)#", expected_channel_input: ip scp
         server enable, expected_channel_input_redacted: false}
     - {channel_output: ip scp server enable, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42(config)#", expected_channel_input: "\n",
+    - {channel_output: "\ntest_device(config)#", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42(config)#", expected_channel_input: end,
+    - {channel_output: "\ntest_device(config)#", expected_channel_input: end,
       expected_channel_input_redacted: false}
     - {channel_output: end, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: exit, expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: exit, expected_channel_input_redacted: false}
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}

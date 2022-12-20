@@ -4,43 +4,43 @@
     host: 10.1.1.142, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "one-gv-2595bk-42#", expected_channel_input: terminal
+    - {channel_output: "test_device#", expected_channel_input: terminal
         length 0, expected_channel_input_redacted: false}
     - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+    - {channel_output: "\ntest_device#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: null, expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: null, expected_channel_input_redacted: false}
 10.1.1.142:22:AsyncsshTransport::1:
   connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
     auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
     host: 10.1.1.142, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "one-gv-2595bk-42#", expected_channel_input: terminal
+    - {channel_output: "test_device#", expected_channel_input: terminal
         length 0, expected_channel_input_redacted: false}
     - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: terminal width
+    - {channel_output: "\ntest_device#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: dir | i Directory
+    - {channel_output: "\ntest_device#", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: dir | i Directory
         of (.*), expected_channel_input_redacted: false}
     - {channel_output: dir | i Directory of (.*), expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\nDirectory of flash:/\none-gv-2595bk-42#", expected_channel_input: verify
+    - {channel_output: "\nDirectory of flash:/\ntest_device#", expected_channel_input: verify
         /md5 flash:/running_config, expected_channel_input_redacted: false}
     - {channel_output: verify /md5 flash:/running_config, expected_channel_input: "\n",
       expected_channel_input_redacted: false}
     - {channel_output: "\n...MD5 of flash:/running_config Done!\nverify /md5 (flash:/running_config)\
-        \ = 0d016eab174e8f56af79d9a99167fc23\n\n\none-gv-2595bk-42#", expected_channel_input: dir
+        \ = 0d016eab174e8f56af79d9a99167fc23\n\n\ntest_device#", expected_channel_input: dir
         flash:/running_config, expected_channel_input_redacted: false}
     - {channel_output: dir flash:/running_config, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nDirectory of flash:/running_config\n\n  154  -rw-      \
         \  9186  Dec 19 2022 13:13:56 +00:00  running_config\n\n256503808 bytes total\
-        \ (61083648 bytes free)\none-gv-2595bk-42#", expected_channel_input: dir flash:/
+        \ (61083648 bytes free)\ntest_device#", expected_channel_input: dir flash:/
         | i free\)$, expected_channel_input_redacted: false}
     - {channel_output: dir flash:/ | i free\)$, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n256503808 bytes total (61083648 bytes free)\none-gv-2595bk-42#",
+    - {channel_output: "\n256503808 bytes total (61083648 bytes free)\ntest_device#",
       expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-42#", expected_channel_input: exit, expected_channel_input_redacted: false}
+    - {channel_output: "\ntest_device#", expected_channel_input: exit, expected_channel_input_redacted: false}
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}

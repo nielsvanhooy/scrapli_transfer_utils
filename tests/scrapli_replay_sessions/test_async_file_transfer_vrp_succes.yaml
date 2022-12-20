@@ -4,32 +4,11 @@
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n\n**************************************************************\n\
-        *                                                            *\n*   You have\
-        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
-        \ from The Hague, Netherlands.          *\n*                             \
-        \                               *\n*   Use of this system/network is restricted\
-        \ to employees    *\n*   of KPN, employment agency staff, work experience\
-        \         *\n*   trainees and persons with a contract of employment      \
-        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
-        \ to use the system.                            *\n*                     \
-        \                                       *\n*   The software and data in this\
-        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
-        \ or deleted     *\n*   only by authorized persons for the purpose of their\
-        \      *\n*   work for KPN.                                            *\n\
-        *                                                            *\n*   Use Ctrl\
-        \ z and quit to logout.                           *\n*                   \
-        \                                         *\n*                           \
-        \                                 *\n**************************************************************\n\
-        \n  -----------------------------------------------------------------------------\
-        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
-        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
-        \   : 2022-12-20 12:40:12+01:00     \n  -----------------------------------------------------------------------------\n\
-        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
-    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
+    - {channel_output: "<test_device>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<test_device>screen-length 0 temporary", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
     - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: null,
+        \ terminal interface only.\n<test_device>", expected_channel_input: null,
       expected_channel_input_redacted: false}
 10.1.1.131:22:AsyncsshTransport::1:
   connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
@@ -37,32 +16,11 @@
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n\n**************************************************************\n\
-        *                                                            *\n*   You have\
-        \ logged on to the KPN Managed VPN service.       *\n*   Network management\
-        \ from The Hague, Netherlands.          *\n*                             \
-        \                               *\n*   Use of this system/network is restricted\
-        \ to employees    *\n*   of KPN, employment agency staff, work experience\
-        \         *\n*   trainees and persons with a contract of employment      \
-        \ *\n*   provided that they are working for KPN and are           *\n*   authorized\
-        \ to use the system.                            *\n*                     \
-        \                                       *\n*   The software and data in this\
-        \ system/network are owned   *\n*   by KPN and may be viewed, changed, copied\
-        \ or deleted     *\n*   only by authorized persons for the purpose of their\
-        \      *\n*   work for KPN.                                            *\n\
-        *                                                            *\n*   Use Ctrl\
-        \ z and quit to logout.                           *\n*                   \
-        \                                         *\n*                           \
-        \                                 *\n**************************************************************\n\
-        \n  -----------------------------------------------------------------------------\
-        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
-        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
-        \   : 2022-12-20 12:40:36+01:00     \n  -----------------------------------------------------------------------------\n\
-        <one-gv-2595bk-03>\n<one-gv-2595bk-03>", expected_channel_input: screen-length
+    - {channel_output: "<test_device>\n<test_device>", expected_channel_input: screen-length
         0 temporary, expected_channel_input_redacted: false}
     - {channel_output: screen-length 0 temporary, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: "\n",
+        \ terminal interface only.\n<test_device>", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
-    - {channel_output: "\n<one-gv-2595bk-03>", expected_channel_input: exit, expected_channel_input_redacted: false}
+    - {channel_output: "\n<test_device>", expected_channel_input: exit, expected_channel_input_redacted: false}
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
