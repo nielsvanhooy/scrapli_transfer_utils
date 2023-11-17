@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "scrapli_transfer_utils"}]
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"
+python = ">=3.11,<4.0"
 scrapli = "^2023.7.30"
 scrapli-community = "^2023.7.30"
 aiofiles = "^23.2.1"
