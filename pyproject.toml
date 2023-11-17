@@ -7,13 +7,13 @@ readme = "README.md"
 packages = [{include = "scrapli_transfer_utils"}]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-scrapli = "^2023.1.30"
-scrapli-community = "^2023.1.30"
-aiofiles = "^23.1.0"
-asyncssh = "^2.13.2"
+python = ">=3.10,<4.0"
+scrapli = "^2023.7.30"
+scrapli-community = "^2023.7.30"
+aiofiles = "^23.2.1"
+asyncssh = "^2.14.1"
 pytest = "^7.4.0"
-scrapli-replay = "^2023.1.30.post1"
+scrapli-replay = "^2023.7.30"
 pytest-asyncio = "^0.21.1"
 coverage = "^7.2.7"
 
