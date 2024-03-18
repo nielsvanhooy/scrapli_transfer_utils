@@ -41,6 +41,7 @@ async def test_check_local_file_fail(async_scp_iosxe_object):
 
 @pytest.mark.scrapli_replay
 async def test_file_transfer_all_opts(async_scp_iosxe_object):
+    async_scp_iosxe_object.host = "10.1.1.154"
 
     async with async_scp_iosxe_object as session:
         await session.open()
@@ -52,16 +53,16 @@ async def test_file_transfer_all_opts(async_scp_iosxe_object):
             _async_file_transfer.return_value = True
             file_trans = await scp.file_transfer(
                 operation="get",
-                src="running_config",
+                src="vlan.dat",
                 dst="files/test.txt",
                 verify=True,
-                device_fs="",
+                device_fs="bootflash:",
                 overwrite=True,
                 force_config=True,
                 cleanup=True,
             )
             assert file_trans.transferred is True
-            assert file_trans.exists is False
+            assert file_trans.exists is True
             assert file_trans.verified is True
 
 
