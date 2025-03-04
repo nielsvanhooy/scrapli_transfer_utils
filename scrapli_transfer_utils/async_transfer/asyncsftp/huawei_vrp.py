@@ -108,9 +108,10 @@ class AsyncSFTPHuaweiVrp(AsyncTransferFeature):
         dst: str,
     ) -> bool:
 
-        result = False
+
 
         try:
+            result = False
             cmd = (
                 f'sshpass -p "{self.conn.auth_password}" sftp {self.conn.auth_username}@{self.conn.host} <<EOF \n'
                 f"    {operation} {src} {dst} \n"

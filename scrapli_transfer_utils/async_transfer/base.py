@@ -272,7 +272,7 @@ class AsyncTransferFeature(ABC):
         if dst_file_data.hash:
             transfer_result.exists = True
         # check if file has the same hash as source
-        if dst_file_data.hash and dst_file_data.hash == src_file_data.hash:
+        if dst_file_data.hash and (dst_file_data.hash == src_file_data.hash):
             transfer_result.verified = True
         else:
             logger.warning(f"'{dst}' failed hash verification!")

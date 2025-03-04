@@ -53,10 +53,10 @@ async def test_file_transfer_all_opts(async_scp_iosxe_object):
             _async_file_transfer.return_value = True
             file_trans = await scp.file_transfer(
                 operation="get",
-                src="vlan.dat",
+                src="ONEM1136-axiros.cfg",
                 dst="files/test.txt",
                 verify=True,
-                device_fs="bootflash:",
+                device_fs="flash:",
                 overwrite=True,
                 force_config=True,
                 cleanup=True,
@@ -74,11 +74,12 @@ async def test_file_transfer_all_overwrite_false(async_scp_iosxe_object):
         scp = AsyncSrapliTransferUtils(async_scp_iosxe_object)
 
         with mock.patch.object(AsyncTransferFeature, "check_local_file") as dst_check:
-            dst_check.return_value.hash = "0d016eab174e8f56af79d9a99167fc23"
+            dst_check.return_value.hash = 'bca181c84f120797fb4f27e8f6ad40c2'
 
             file_trans = await scp.file_transfer(
                 operation="get",
-                src="running_config",
+                src="running-config",
+                device_fs="system:/",
                 verify=True,
                 overwrite=False,
                 force_config=True,

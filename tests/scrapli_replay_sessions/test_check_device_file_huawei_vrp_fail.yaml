@@ -1,71 +1,165 @@
 10.1.1.131:22:AsyncsshTransport::0:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /Users/nielsvanhooij/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: test008,
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "<test_device>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
-    - {channel_output: "\n<test_device>screen-length 0 temporary", expected_channel_input: "\n",
+    - {channel_output: "\n\n**************************************************************\n\
+        *                                                            *\n*   You have
+        logged on to the KPN Managed VPN service.       *\n*   Network management
+        from The Hague, Netherlands.          *\n*                               \
+        \                             *\n*   Use of this system/network is restricted
+        to employees    *\n*   of KPN, employment agency staff, work experience  \
+        \       *\n*   trainees and persons with a contract of employment       *\n\
+        *   provided that they are working for KPN and are           *\n*   authorized
+        to use the system.                            *\n*                       \
+        \                                     *\n*   The software and data in this
+        system/network are owned   *\n*   by KPN and may be viewed, changed, copied
+        or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl
+        z and quit to logout.                           *\n*                     \
+        \                                       *\n*                             \
+        \                               *\n**************************************************************\n\
+        \n  -----------------------------------------------------------------------------\
+        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
+        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
+        \   : 2025-03-04 14:39:45+01:00     \n  -----------------------------------------------------------------------------\n\
+        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
-    - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<test_device>", expected_channel_input: null,
-      expected_channel_input_redacted: false}
+    - {channel_output: "\nInfo: The configuration takes effect on the current user
+        terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: "screen-width
+        256\ny\n\n", expected_channel_input_redacted: false}
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "screen-width 256\nWarning: This command will change the default
+        screen width. Continue? [Y/N]:y\nInfo: Succeeded in setting the screen width
+        to 256.\n<one-gv-2595bk-03>", expected_channel_input: null, expected_channel_input_redacted: false}
 10.1.1.131:22:AsyncsshTransport::1:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /Users/nielsvanhooij/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: test008,
     host: 10.1.1.131, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "<test_device>\n<test_device>", expected_channel_input: screen-length
-        0 temporary, expected_channel_input_redacted: false}
-    - {channel_output: screen-length 0 temporary, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\nInfo: The configuration takes effect on the current user\
-        \ terminal interface only.\n<test_device>", expected_channel_input: display
-        system file-md5 flash:/file_not_here, expected_channel_input_redacted: false}
-    - {channel_output: display system file-md5 flash:/file_not_here, expected_channel_input: "\n",
+    - {channel_output: "\n\n**************************************************************\n\
+        *                                                            *\n*   You have
+        logged on to the KPN Managed VPN service.       *\n*   Network management
+        from The Hague, Netherlands.          *\n*                               \
+        \                             *\n*   Use of this system/network is restricted
+        to employees    *\n*   of KPN, employment agency staff, work experience  \
+        \       *\n*   trainees and persons with a contract of employment       *\n\
+        *   provided that they are working for KPN and are           *\n*   authorized
+        to use the system.                            *\n*                       \
+        \                                     *\n*   The software and data in this
+        system/network are owned   *\n*   by KPN and may be viewed, changed, copied
+        or deleted     *\n*   only by authorized persons for the purpose of their\
+        \      *\n*   work for KPN.                                            *\n\
+        *                                                            *\n*   Use Ctrl
+        z and quit to logout.                           *\n*                     \
+        \                                       *\n*                             \
+        \                               *\n**************************************************************\n\
+        \n  -----------------------------------------------------------------------------\
+        \     \n  User last login information:     \n  -----------------------------------------------------------------------------\n\
+        \  Access Type: SSH      \n  IP-Address : 192.168.28.197     \n  Time    \
+        \   : 2025-03-04 14:39:49+01:00     \n  -----------------------------------------------------------------------------\n\
+        <one-gv-2595bk-03>", expected_channel_input: screen-length 0 temporary, expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>screen-length 0 temporary", expected_channel_input: "\n",
       expected_channel_input_redacted: false}
-    - {channel_output: "\nError: File can't be found\n<test_device>", expected_channel_input: dir
+    - {channel_output: "\nInfo: The configuration takes effect on the current user
+        terminal interface only.\n<one-gv-2595bk-03>", expected_channel_input: "screen-width
+        256\ny\n\n", expected_channel_input_redacted: false}
+    - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "screen-width 256\nWarning: This command will change the default
+        screen width. Continue? [Y/N]:y\nInfo: Succeeded in setting the screen width
+        to 256.\n<one-gv-2595bk-03>", expected_channel_input: display system file-md5
+        flash:/file_not_here, expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>\n<one-gv-2595bk-03>display system file-md5
+        flash:/file_not_here", expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\nError: File can't be found\n<one-gv-2595bk-03>", expected_channel_input: dir
         /all, expected_channel_input_redacted: false}
     - {channel_output: dir /all, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\nDirectory of flash:/\n\n  Idx  Attr     Size(Byte)  Date\
         \        Time(LMT)  FileName \n    0  drw-              -  Jun 07 2021 15:26:38\
-        \   shelldir\n    1  -rw-        207,376  Nov 17 2022 11:32:53   webdata.db\n\
-        \    2  drw-              -  Dec 13 2022 10:10:21   AUTO_BACKUP\n    3  drw-\
-        \              -  May 20 2020 18:22:56   dhcp\n    4  -rw-         13,092\
-        \  Dec 16 2022 13:33:05   lala\n    5  drw-              -  May 20 2020 18:22:11\
-        \   slog\n    6  -rw-         11,171  Jun 07 2021 15:27:50   default_ca.cer\n\
-        \    7  -rw-            200  May 20 2020 18:21:59   hostkey_ECC\n    8  drw-\
-        \              -  May 20 2020 18:22:25   logopath\n    9  -rw-         13,092\
-        \  Dec 16 2022 10:44:10   21500104832SL5600370-1668688866694.cfg\n   10  -rw-\
-        \         15,123  Dec 16 2022 10:18:29   lala.txt\n   11  -rw-         15,123\
-        \  Dec 13 2022 10:10:21   21500104832SL5600370-1670576590861.cfg\n   12  -rw-\
-        \          3,455  Dec 09 2022 10:03:06   ONEM1131-preconfig.cfg\n   13  drw-\
-        \              -  Jun 07 2021 15:26:37   shlogfile\n   14  -ro-          2,494\
-        \  Jun 07 2021 15:27:06   houp.huawei.com_local.cer\n   15  -rw-         14,291\
-        \  Oct 20 2022 19:13:19   test_device-confg\n   16  -rw-         13,888\
-        \  Oct 20 2022 16:21:42   21500104832SL5600370-1665687926033.cfg\n   17  -rw-\
-        \          1,265  Jun 07 2021 15:27:50   default_local.cer\n   18  drw-  \
-        \            -  Nov 17 2022 11:32:59   logfile\n   19  -rw-            120\
-        \  Nov 04 2021 09:21:45   vrpcfg.zip\n   20  drw-              -  May 03 2022\
-        \ 12:43:49   $_user\n   21  drw-              -  Nov 19 2021 12:18:26   backup_startup\n\
-        \   22  -rw-              0  May 20 2020 18:21:55   brdxpon_snmp_cfg.efs\n\
-        \   23  drw-              -  Jun 07 2021 15:26:46   crash\n   24  drw-   \
-        \           -  May 20 2020 18:22:57   sqlitedb\n   25  -ro-          2,082\
-        \  Jun 07 2021 15:27:06   Actalis_CA.cer\n   26  -rw-          1,253  Jun\
-        \ 07 2021 15:27:20   local.cer\n   27  -rw-            702  Dec 13 2022 10:10:22\
-        \   private-data.txt\n   28  drw-              -  Oct 20 2022 16:21:38   localuser\n\
-        \   29  -rw-          1,318  Jun 07 2021 15:27:20   ca.cer\n   30  drw-  \
-        \            -  Dec 09 2022 10:05:18   default-sdb\n   31  drw-          \
-        \    -  Dec 09 2022 10:05:59   update\n   32  -rw-     13,570,688  Nov 17\
-        \ 2022 12:09:35   AR650A-V300R019CP0026.pat\n   33  -rw-          6,474  Nov\
-        \ 17 2022 10:37:12   startcap\n   34  -rw-            498  Nov 17 2022 12:09:40\
-        \   kpn_install_syslog.py\n   35  -rw-    159,265,792  May 20 2020 18:18:54\
-        \   AR650A-V300R019C10SPC200.cc\n   36  -rw-         12,519  Nov 18 2022 06:55:28\
-        \   21500104832SL5600370-1668750669617.cfg\n   37  -rw-    167,541,888  Nov\
-        \ 17 2022 10:47:46   AR650A_V300R019C11SPC200.cc\n   38  -rw-          2,329\
-        \  Dec 09 2022 10:04:22   alloc_hugemem_record\n   39  -rw-            200\
-        \  Jun 07 2021 15:27:50   ca_config.ini\n   40  -rw-            498  Nov 29\
-        \ 2021 10:18:56   [kpn_install_syslog.py]\n\n631,960 KB total available (291,896\
-        \ KB free)\n<test_device>", expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\n<test_device>", expected_channel_input: exit, expected_channel_input_redacted: false}
+        \   shelldir\n    1  -rw-        207,376  Jan 04 2024 14:27:19   webdata.db\n\
+        \    2  drw-              -  Mar 04 2025 13:34:12   AUTO_BACKUP\n    3  -rw-\
+        \          3,455  Mar 24 2023 07:13:28   ONEM1131-preconfig.backup\n    4\
+        \  -rw-         14,438  Apr 22 2024 17:11:17   axess_20240422180551.cfg\n\
+        \    5  -rw-         13,604  Dec 18 2024 10:34:50   axess_20241218102925.cfg\n\
+        \    6  -rw-         14,710  May 13 2024 10:33:49   axess_20240513112833.cfg\n\
+        \    7  drw-              -  May 20 2020 18:22:56   dhcp\n    8  drw-    \
+        \          -  May 20 2020 18:22:11   slog\n    9  -rw-         11,171  Jun
+        07 2021 15:27:50   default_ca.cer\n   10  -rw-         14,917  Feb 05 2025
+        13:26:13   axess_20250205132038.cfg\n   11  -rw-         14,438  Apr 23 2024
+        14:34:35   axess_20240423152913.cfg\n   12  -rw-            200  May 20 2020
+        18:21:59   hostkey_ECC\n   13  drw-              -  May 20 2020 18:22:25 \
+        \  logopath\n   14  -rw-         14,917  Dec 04 2024 12:48:09   axess_20241204124233.cfg\n\
+        \   15  -rw-            498  Mar 24 2023 07:13:56   kpn_install_syslog.backup\n\
+        \   16  -rw-         14,438  Apr 22 2024 13:14:44   axess_20240422140924.cfg\n\
+        \   17  -rw-          4,363  Jul 10 2024 19:10:32   ONEM1131-preconfig.cfg\n\
+        \   18  -rw-         14,438  Apr 22 2024 14:33:10   axess_20240422152753.cfg\n\
+        \   19  -rw-         14,438  Apr 24 2024 14:28:16   axess_20240424152256.cfg\n\
+        \   20  -rw-         14,438  Apr 22 2024 21:04:38   axess_20240422215913.cfg\n\
+        \   21  -rw-         13,604  Jan 21 2025 12:53:51   axess_20250121124813.cfg\n\
+        \   22  -rw-         13,397  Jun 05 2024 07:36:11   axess_20240605083043.cfg\n\
+        \   23  -rw-         14,182  May 13 2024 08:28:28   axess_20240513092830.cfg\n\
+        \   24  drw-              -  Jun 07 2021 15:26:37   shlogfile\n   25  -rw-\
+        \          2,494  Jun 07 2021 15:27:06   houp.huawei.com_local.cer\n   26\
+        \  -rw-         13,397  Jun 19 2024 10:44:48   axess_20240619113853.cfg\n\
+        \   27  -rw-         14,438  Apr 09 2024 16:59:05   axess_20240409175344.cfg\n\
+        \   28  -rw-         13,396  Sep 25 2024 07:29:07   axess_20240911114551.cfg\n\
+        \   29  -rw-         14,917  Oct 23 2024 10:54:22   axess_20241023114842.cfg\n\
+        \   30  -rw-         14,710  May 24 2024 10:36:30   axess_20240524113057.cfg\n\
+        \   31  -rw-          1,265  Jun 07 2021 15:27:50   default_local.cer\n  \
+        \ 32  -rw-         13,604  Mar 04 2025 13:34:12   axess_20250219112303.cfg\n\
+        \   33  drw-              -  Jan 04 2024 14:27:24   logfile\n   34  -rw- \
+        \           120  Nov 04 2021 09:21:45   vrpcfg.zip\n   35  -rw-         14,710\
+        \  May 13 2024 10:14:16   axess_20240513104801.cfg\n   36  -rw-         14,709\
+        \  Jul 17 2024 12:25:10   axess_20240717131902.cfg\n   37  drw-          \
+        \    -  May 03 2022 12:43:49   $_user\n   38  drw-              -  Nov 19
+        2021 12:18:26   backup_startup\n   39  -rw-         13,604  Nov 06 2024 10:00:09\
+        \   axess_20241106095431.cfg\n   40  -rw-         14,438  Apr 23 2024 07:51:02\
+        \   axess_20240423084531.cfg\n   41  -rw-         13,163  Jun 06 2024 07:34:45\
+        \   axess_20240606083447.cfg\n   42  -rw-         13,396  Jul 10 2024 19:19:12\
+        \   axess_20240710201311.cfg\n   43  -rw-         13,397  Jun 06 2024 12:16:57\
+        \   axess_20240606131129.cfg\n   44  -rw-         13,918  Apr 23 2024 08:41:53\
+        \   axess_20240423094155.cfg\n   45  -rw-              0  May 20 2020 18:21:55\
+        \   brdxpon_snmp_cfg.efs\n   46  drw-              -  Jun 07 2021 15:26:46\
+        \   crash\n   47  -rw-         14,710  May 22 2024 14:56:47   axess_20240522145840.cfg\n\
+        \   48  -rw-         14,438  Apr 22 2024 20:45:38   axess_20240422214015.cfg\n\
+        \   49  -rw-          4,413  Apr 22 2024 19:50:13   ONEM1131-axiros_snmp.cfg\n\
+        \   50  drw-              -  May 20 2020 18:22:57   sqlitedb\n   51  -rw-\
+        \         14,438  Apr 22 2024 20:23:10   axess_20240422211746.cfg\n   52 \
+        \ -rw-          2,082  Jun 07 2021 15:27:06   Actalis_CA.cer\n   53  -rw-\
+        \         13,783  Jun 06 2024 08:06:41   axess_20240606090110.cfg\n   54 \
+        \ -rw-          1,253  Jun 07 2021 15:27:20   local.cer\n   55  -rw-     \
+        \    14,438  Apr 23 2024 09:03:27   axess_20240423095802.cfg\n   56  -rw-\
+        \            742  Mar 04 2025 13:34:13   private-data.txt\n   57  drw-   \
+        \           -  Mar 04 2025 13:30:47   localuser\n   58  -rw-      1,626,112\
+        \  Jan 04 2024 14:43:22   ar_exec_file_patch.squash\n   59  -rw-         \
+        \ 1,318  Jun 07 2021 15:27:20   ca.cer\n   60  -rw-         14,438  Apr 25
+        2024 05:49:25   axess_20240425064352.cfg\n   61  drw-              -  Mar
+        04 2025 11:11:53   default-sdb\n   62  -rw-         14,710  May 13 2024 12:47:38\
+        \   axess_20240513134213.cfg\n   63  -rw-         14,710  May 08 2024 09:30:12\
+        \   axess_20240508102440.cfg\n   64  drw-              -  Mar 04 2025 11:12:39\
+        \   update\n   65  -rw-         14,438  Apr 23 2024 11:11:45   axess_20240423120625.cfg\n\
+        \   66  -rw-     75,459,072  Jan 04 2024 14:40:01   AR650A_V300R019SPH420.pat\n\
+        \   67  -rw-          6,474  Nov 17 2022 10:37:12   startcap\n   68  -rw-\
+        \         14,710  May 13 2024 13:39:43   axess_20240513143417.cfg\n   69 \
+        \ -rw-    171,817,472  Jan 04 2024 14:39:35   AR650A-V300R019C13SPC200.cc\n\
+        \   70  -rw-         13,604  Nov 25 2024 15:31:30   axess_20241125152556.cfg\n\
+        \   71  -rw-            522  Jan 04 2024 14:40:16   kpn_install_syslog.py\n\
+        \   72  -rw-         14,438  Apr 22 2024 13:55:21   axess_20240422144958.cfg\n\
+        \   73  -rw-         13,918  Apr 25 2024 05:23:31   axess_20240425062332.cfg\n\
+        \   74  -rw-         14,710  May 13 2024 13:06:34   axess_20240513140106.cfg\n\
+        \   75  -rw-         14,710  May 31 2024 15:11:00   axess_20240531160534.cfg\n\
+        \   76  -rw-          2,329  Mar 04 2025 11:10:37   alloc_hugemem_record\n\
+        \   77  -rw-         13,396  Jul 31 2024 13:34:55   axess_20240731142844.cfg\n\
+        \   78  -rw-            200  Jun 07 2021 15:27:50   ca_config.ini\n   79 \
+        \ -rw-         14,710  May 13 2024 13:56:53   axess_20240513145130.cfg\n \
+        \  80  -rw-         14,438  Apr 22 2024 15:52:28   axess_20240422164704.cfg\n\
+        \   81  -rw-         13,783  Jun 25 2024 06:10:34   axess_20240625070442.cfg\n\
+        \   82  -rw-          3,764  Apr 22 2024 15:18:58   [ONEM1131-preconfig.cfg_old]\n
+        \n631,960 KB total available (379,748 KB free)\n<one-gv-2595bk-03>", expected_channel_input: "\n",
+      expected_channel_input_redacted: false}
+    - {channel_output: "\n<one-gv-2595bk-03>", expected_channel_input: exit, expected_channel_input_redacted: false}
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}

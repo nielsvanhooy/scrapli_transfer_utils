@@ -20,7 +20,7 @@ async def test_check_device_file_iosxe_succes(async_scp_iosxe_object):
         check_file = await scp.check_device_file(device_fs, file_name)
 
         assert check_file.hash == "c61b399f34b178264d23617becf6c88b"
-        assert check_file.free == 61063168
+        assert check_file.free == 360153088
         assert check_file.size == 2814938
 
 
@@ -36,7 +36,7 @@ async def test_check_device_file_iosxe_fail(async_scp_iosxe_object):
         check_file = await scp.check_device_file(device_fs, file_name)
 
         assert check_file.hash == ""
-        assert check_file.free == 61063168
+        assert check_file.free == 360153088
         assert check_file.size == 0
 
 

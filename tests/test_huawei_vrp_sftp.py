@@ -15,7 +15,7 @@ from scrapli_transfer_utils.factory import AsyncSrapliTransferUtils
 @pytest.mark.scrapli_replay
 async def test_check_device_file_huawei_vrp_succes(async_sftp_huawei_vrp_object):
     device_fs = "flash:/"
-    file_name = "21500104832SL5600370-1668688866694.cfg"
+    file_name = "axess_20250205132038.cfg"
 
     async with async_sftp_huawei_vrp_object as session:
         await session.open()
@@ -23,9 +23,9 @@ async def test_check_device_file_huawei_vrp_succes(async_sftp_huawei_vrp_object)
 
         check_file = await sftp.check_device_file(device_fs, file_name)
 
-        assert check_file.hash == "f317ac28f760df9c5f6f714ce501ac81"
-        assert check_file.free == 291896000
-        assert check_file.size == 13092000
+        assert check_file.hash == "259bb20835c70bce41765234d9b812de"
+        assert check_file.free == 379748000
+        assert check_file.size == 14917000
 
 
 @pytest.mark.scrapli_replay
@@ -40,7 +40,7 @@ async def test_check_device_file_huawei_vrp_fail(async_sftp_huawei_vrp_object):
         check_file = await sftp.check_device_file(device_fs, file_name)
 
         assert check_file.hash == ""
-        assert check_file.free == 291896000
+        assert check_file.free == 379748000
         assert check_file.size == 0
 
 

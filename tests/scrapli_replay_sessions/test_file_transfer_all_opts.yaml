@@ -1,6 +1,6 @@
 10.1.1.154:22:AsyncsshTransport::0:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /Users/nielsvanhooij/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: test008,
     host: 10.1.1.154, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
@@ -21,16 +21,16 @@
         z and quit to logout.                           *\n*                     \
         \                                       *\n*                             \
         \                               *\n**************************************************************\n\
-        \none-gv-2595bk-54#", expected_channel_input: terminal length 0, expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-54#terminal length 0", expected_channel_input: "\n",
-      expected_channel_input_redacted: false}
+        \none-gv-2595bk-54#\none-gv-2595bk-54#", expected_channel_input: terminal
+        length 0, expected_channel_input_redacted: false}
+    - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\none-gv-2595bk-54#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\none-gv-2595bk-54#", expected_channel_input: null, expected_channel_input_redacted: false}
 10.1.1.154:22:AsyncsshTransport::1:
-  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: "",
-    auth_private_key_passphrase: false, auth_secondary: false, auth_username: user,
+  connection_profile: {auth_bypass: false, auth_password: true, auth_private_key: /Users/nielsvanhooij/.ssh/id_rsa_jumpuser_rufus,
+    auth_private_key_passphrase: false, auth_secondary: false, auth_username: test008,
     host: 10.1.1.154, port: 22, transport: asyncssh}
   interactions:
     - {channel_output: '', expected_channel_input: "\n", expected_channel_input_redacted: false}
@@ -51,26 +51,27 @@
         z and quit to logout.                           *\n*                     \
         \                                       *\n*                             \
         \                               *\n**************************************************************\n\
-        \none-gv-2595bk-54#", expected_channel_input: terminal length 0, expected_channel_input_redacted: false}
-    - {channel_output: "\none-gv-2595bk-54#terminal length 0", expected_channel_input: "\n",
-      expected_channel_input_redacted: false}
+        one-gv-2595bk-54#\none-gv-2595bk-54#", expected_channel_input: terminal length
+        0, expected_channel_input_redacted: false}
+    - {channel_output: terminal length 0, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\none-gv-2595bk-54#", expected_channel_input: terminal width
         512, expected_channel_input_redacted: false}
     - {channel_output: terminal width 512, expected_channel_input: "\n", expected_channel_input_redacted: false}
     - {channel_output: "\none-gv-2595bk-54#", expected_channel_input: verify /md5
-        bootflash:vlan.dat, expected_channel_input_redacted: false}
-    - {channel_output: verify /md5 bootflash:vlan.dat, expected_channel_input: "\n",
+        flash:ONEM1136-axiros.cfg, expected_channel_input_redacted: false}
+    - {channel_output: verify /md5 flash:ONEM1136-axiros.cfg, expected_channel_input: "\n",
       expected_channel_input_redacted: false}
-    - {channel_output: "\n.Done!\nverify /md5 (bootflash:vlan.dat) = 63ccd1ca0fa5dd53c4fa72604b335a4d\n\
-        \n\none-gv-2595bk-54#", expected_channel_input: dir bootflash:vlan.dat, expected_channel_input_redacted: false}
-    - {channel_output: dir bootflash:vlan.dat, expected_channel_input: "\n", expected_channel_input_redacted: false}
-    - {channel_output: "\nDirectory of bootflash:/vlan.dat\n\n24      -rw-       \
-        \       596  Mar 18 2024 11:51:00 +01:00  vlan.dat\n\n2885718016 bytes total
-        (414838784 bytes free)\none-gv-2595bk-54#", expected_channel_input: 'dir bootflash:
-        | i free\)$', expected_channel_input_redacted: false}
-    - {channel_output: 'dir bootflash: | i free\)$', expected_channel_input: "\n",
+    - {channel_output: "\n.Done!\nverify /md5 (bootflash:ONEM1136-axiros.cfg) = a21d661d2d7c8088f92c3e35f64667a8\n\
+        \n\none-gv-2595bk-54#", expected_channel_input: dir flash:ONEM1136-axiros.cfg,
       expected_channel_input_redacted: false}
-    - {channel_output: "\n2885718016 bytes total (414838784 bytes free)\none-gv-2595bk-54#",
+    - {channel_output: dir flash:ONEM1136-axiros.cfg, expected_channel_input: "\n",
+      expected_channel_input_redacted: false}
+    - {channel_output: "\nDirectory of bootflash:/ONEM1136-axiros.cfg\n\n16      -rw-\
+        \             6694  Apr 22 2024 09:55:24 +02:00  ONEM1136-axiros.cfg\n\n2885718016
+        bytes total (360108032 bytes free)\none-gv-2595bk-54#", expected_channel_input: 'dir
+        flash: | i free\)$', expected_channel_input_redacted: false}
+    - {channel_output: 'dir flash: | i free\)$', expected_channel_input: "\n", expected_channel_input_redacted: false}
+    - {channel_output: "\n2885718016 bytes total (360108032 bytes free)\none-gv-2595bk-54#",
       expected_channel_input: sh run all | i ^ip scp server enable|^ip tcp window|^ip
         ssh window, expected_channel_input_redacted: false}
     - {channel_output: sh run all | i ^ip scp server enable|^ip tcp window|^ip ssh

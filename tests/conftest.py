@@ -10,19 +10,21 @@ from scrapli_community.huawei.vrp.async_driver import (
 )
 
 MY_DEVICE_IOSXE = {
-    "host": "10.1.1.142",
-    "auth_username": "user",
-    "auth_password": "user",
+    "host": "10.1.1.154",
+    "auth_username": "test008",
+    "auth_password": "test008",
     "auth_strict_key": False,
+    "ssh_config_file": "config",
     "transport": "asyncssh",
     "auth_private_key": "",
 }
 
 MY_DEVICE_HUAWEI_VRP = {
     "host": "10.1.1.131",
-    "auth_username": "user",
-    "auth_password": "user",
+    "auth_username": "test008",
+    "auth_password": "test008",
     "auth_strict_key": False,
+    "ssh_config_file": "config",
     "transport": "asyncssh",
     "privilege_levels": VRP_DEFAULT_PRIVILEGE_LEVELS,
     "default_desired_privilege_level": "privilege_exec",
